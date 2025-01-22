@@ -1,0 +1,617 @@
+@import url('');
+:root {
+	--main-color: #FFDCDF;
+	--dark-main: #db9caf;
+	--black: #13131a;;
+	--bg:6c757d;
+}
+
+/*overall design*/
+
+*{
+	text-decoration-color: #823137;
+	margin: 0px; padding: 0px;
+	outline: none;
+	text-decoration: none;
+	transition: .2 Linear;
+}
+
+html {
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+}
+
+/*body bg*/
+body {
+/*	background linear-gradient(30deg, rgba(224, 163, 164, 1), rgba(143, 193, 212, 1));*/
+	background-color: #6c584c;
+	background-repeat: no repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/*header design*/
+    header {
+        		background: var(--bg);
+        		background-color:#495057 ;
+        		display: flex;
+        		align-item: center;
+    /*  justify-content: center;*/
+        		padding: 0.5rem 2%;
+        		position: fixed;
+        		top: 0; left: 0; right:0;
+        		z-index: 1000px;
+        		flex-wrap: wrap;
+    }
+
+
+    .header .logo img {
+        height: 70px;
+        margin-left: 15px;
+        
+    }
+
+    .header .navbar {
+        margin-right: 10%;
+    }
+
+    .header .navbar a{
+        color: white ;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left:35px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    nav ul li {
+    	margin-top: 20px;
+    	font-size: 20px;
+        display: inline-block;
+    }
+
+    .header .navbar a:hover, a.active {
+        color:floralwhite;
+        border-bottom: .2rem solid flowerwhite;
+        transition: .3s;
+    }
+
+        .check-btn {
+            font-size: 30px;
+            color: black;
+            margin-left: 15px;
+            cursor: pointer;
+            display: none; 
+        }
+
+        .check-btn :hover{
+            color:floralwhite;
+            transition: .3s;
+        }
+
+        #check {
+            display: none;
+        }
+
+        /* RESPONSIVE MENU */
+
+        @media (max-width: 1020px) {
+            .header .navbar {
+                margin-right: 25px;
+            }
+        
+        .chech-btn {
+            display: block;
+        }
+        
+        .navbar ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--dark-main);
+            top: 90px;
+            left: -100%;
+            text-align: center;
+            transition: all .3s;
+        }
+
+        .navr ul li {
+            display: block;
+        }
+
+        .navbar ul li a {
+            font-size: 50px;
+            color:floralwhite;
+            font-weight: bold;
+            line-height: 120px;
+        }
+
+
+
+         .navbar ul li a:hover, a.action {
+            background: none;
+            color: var(--bg);
+            border-bottom: .3rem solid var(--bg);
+            transition: .2s;
+        }
+
+        #check:chacked ~ ul{
+            left: 0;
+        }
+
+    }
+    /* RESPONSIVE MENU */
+
+
+    /*ICONS - CART-USER*/
+
+    .header .icons div {
+        cursor: pointer;
+        padding-right: 12px;
+        color: var(--black);
+        font-size: 32px;
+        border: none;
+        display: inline-block;
+    }   
+
+
+    .header .icons div:hover {
+        color:floralwhite;
+        transition: .3s;
+    }
+
+    /*ICONS -CART-USER*/
+
+    .header .search-form{
+        margin-left: -100px;
+        margin-top: 10px;
+    }
+
+    .header .search-form input{
+        height: 50px;
+        width: 340px;
+        font-size: 1.6rem;
+        color:var(--black);
+        text-tranform: none;
+        background: whitesmoke;
+        border-radius: 50px;
+        border-color: #FFDCDF;
+        margin-right: 17px;
+        margin-left: 40px;
+        padding: 10px;
+    }
+
+    @media (max-width: 1020px) {
+        .header .search-form input {
+            heightL: 40px;
+            witdh: 300px;
+        }
+    }
+
+    /*header end*/
+
+
+
+    /*CONTENT START*/
+    .content {
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 120px;
+    }
+
+    /*FIRST PART*/
+    .about{
+        display: inline-flex;
+        justify-content: space-betweem;
+        align-item: center;
+        flex-wrap: wrap;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        
+    }
+
+    .about-image{
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .about-image img{
+        max-width: 101%;
+        height: 500px;
+        width: 500px;
+
+        margin-left: 160px;
+        border-radius: 20px;
+        display: block;
+        transition: 0.5s ease;
+    }
+
+    /*.about-image:hover img}
+    transform: scale(1.1)
+    }*/
+
+    .about-content{
+        flex: 1;
+    }
+
+    .heading h1{
+    	margin-top: 150px;
+        font-family: 'IM Fell DW Pica', serif;
+    	font-size: 100px;
+    	font-style: italic;
+    	text-align: center;
+    	color:#001524;
+        
+    }
+
+    .heading p{
+    	color:floralwhite ;
+        font-family: 'IM Fell DW Pica', serif;
+        font-style: italic;
+        margin-bottom: -10px;
+    }
+
+    .about-content h2{
+        font-size: 40px;
+        font-family: 'IM Fell DW Pica', serif;
+        margin-bottom: 15px;
+        margin-left: -30px;
+        color:#001524 ;
+        margin-right: 120px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .about-content p{
+        font-size: 23px;
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        line-height: 1.5;
+        color: floralwhite;
+        font-weight: bold;
+        margin-left: -50px;
+        margin-right: 150px;
+        text-align: justify;
+    }
+
+    .about-content .buy-now:hover{
+        background-color: var(--dark-main);
+    }
+
+    /*SECOND PART*/
+    .header .search-form label{
+        cursor: pointer;
+        font-size: 2.2rem
+        margin-right: 1rem;
+        color:var(--black);
+    }
+
+    .header .search-form label:hover{
+        color:var(--main); 
+    }
+
+    /*for heading*/
+    .heading {
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    .heading span{
+        color: var(--dark-main);
+    }
+
+    .heading-description{
+        text-align: center;
+        padding: 1.3rem 0;
+        font-size: 1.6rem;
+        font_weight: bold;
+    }
+
+    /*category-texy start*/
+    .menu .category-text {
+        border: black;
+        border-radius: 40px;
+        border-style: solid;
+        display: inline-black;
+        font-size: 40px;
+        margin-left: 20%;
+        padding: 1 rem;
+    }
+    /*category-text end*/
+
+
+    /*top selling start*/
+    .menu .heading {
+        margin-top: 2%;
+    }
+
+    /*for styling menu*/
+    .menu .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        gap: 0.3rem;
+        padding: 2.5rem 0;
+        grid-row-gap:7rem;
+        padding-left: 7rem;
+
+    }
+
+    .menu .container .menu-box {
+        /* background: var(--white);*/
+        /* change the width and height as needed */
+        width: 78%; /* Adjust the width;*/
+        max-width: 400px; /* You can set a maximum width if needed */
+        /* height: 100%; */
+        /* Adjust the height */
+        max-height: 200%;
+        /* cursor: pointer;*/
+        box-shadow: 3px 3px 10px rgba(179, 179, 179, 0.2);
+        border-radius: 20px;
+        padding: 0.5ren;
+        border: var(--dark-main);
+        border-ratius: 20px;
+        border-style: solid;
+        bordeer-width: 3px    
+        }
+
+        .menu .container .menu-box img {
+            width: 70%;
+            border-ratius: 10px;
+            margi -top: 10px;
+            margin-left: 50px;
+        }
+
+        .menu .container .menu-box .menu-content {
+            padding: 1.2ren;
+            padding-left: 50px;
+            padding-right: 50px;
+            /* margin-left: 40px;*/
+            text-align: justify;
+        }
+
+        .menu .container .menu-box .menu-content h3{
+            font-size: 20 px;
+            padding-top: 1px;
+            margin-bottom: 5px;
+            text-align: center;
+            color: block;
+            /* padding-left: 10px;*/
+        }
+
+        .menu .container .menu-box .menu-content p{
+            font-size: 1px;
+            padding: 1.3 ren 0;
+            margin-bottom: 25px;
+            color: var(--black);
+        }
+
+        .menu .container .menu-box .menu-content a {
+            font-size: 17px;
+            color: #fff;
+            background-color: var(-- main-color);
+            margin-left: 50px;
+            border-radius: 50px;
+            border-color: var(--dark-main);
+             border-style: solid;
+             padding: 5px;
+             paddig-right: 10px;
+             padding-left: 10px;
+        }
+
+        .menu .container .mennu-box .menu-content a:hover {
+            background-color: var(--dark-main);
+        }
+
+        /*.menu .container .menu-box:hover img{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+        }*/
+
+        .menu .container .menu-box:hover{
+            box-shadow: 0px 0px 10px 0px #865439;
+        }
+
+        .menu .to-menu{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 20px;
+        }
+
+        .menu .to-menu a{
+            color: whitemode;
+            background-color: var(==main-color);
+                font-size: 1.3ren;
+                border-radius: 50px;
+                border-color: var(--dark-main);
+                border-style: solid;
+                padding: 10px 20px;
+                margin:auto;
+                text-decoration: none;
+                transition: 0.3s ease;
+                text-align: center;
+        }
+
+        .menu .to-menu a:hover{
+            background-color: var(--dark-main);
+        }
+        /*top selling end*/
+
+
+
+        /*CONTNT END*/
+.team-heading {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'IM Fell DW Pica', serif;
+    color: #001524;
+    font-style: italic;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Adjust the team card container */
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: -30px;
+}
+
+.team {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    border-color: #386641;
+    border-style: solid;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    background-color: #588157;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-info {
+    margin-top: 10px;
+}
+
+.card-name {
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-role {
+    font-size: 1em;
+    color: #000000;
+    margin: 5px 0;
+}
+
+.card-email {
+    font-size: 0.9em;
+    color: #000000;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    background-color: none;
+    color: none; 
+    border-color:#f7c3ca ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #edbec4;
+}
+        /*FPPTER START*/
+
+ .footer {
+    width: 100%;
+    height: auto;
+    background:  #495057 ;
+    background-size: cover;
+    background-repeat: no-re peat;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Adjust Grid Structure */
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide the footer into 2 equal sections */
+    gap: 2rem; /* Add gap between sections */
+    padding: 0 2rem;
+}
+
+/* Footer Content Boxes */
+.footer .container .footer-box {
+    padding: 1rem;
+}
+
+/* Header Styling */
+.footer .container .footer-box h3 {
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-family: 'IM Fell DW Pica', serif;
+    margin-bottom: 1rem;
+}
+
+.footer-box a{
+    color: white;
+    font-size: 20px;
+}
+/* Newsletter Form */
+.footer .container .footer-box form {
+    display: flex;
+    gap: 0.5rem; 
+}
+
+.footer .container .footer-box form input[type="email"] {
+    flex: 1; /* Input takes the remaining space */
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.footer .container .footer-box form button {
+    padding: 10px 20px;
+    background: white;
+    color:   #495057;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer .container .footer-box form button:hover {
+    background:  #495057;
+}
+
+
+.footer .container .footer-box.contact {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Icons */
+
+
+
+.footer .container .footer-box .icons a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: 30px;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.footer .container .footer-box .icons a:hover {
+    color: floralwhite;
+}
+
+
+
+        /*--------------------------CART FORM-------------------------*/

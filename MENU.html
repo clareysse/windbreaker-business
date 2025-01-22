@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/Kian%20Christian/Documents/ict/MENU.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewpoint" content="width=device-width, initial-scale-1">
+  <title>MENU</title>
+  <link rel="icon" type="image/x-icon" href="file:///C:\Users\Kian Christian\Documents\ict\home_files/no bg logo.png">
+  <link rel="stylesheet" type="text/css" href="file:///C:\Users\Kian Christian\Documents\ict\menu_files/menu.css">
+  <!-- css file -->
+  <link rel="stylesheet" type="text/css" href="file:///C:\Users\Kian Christian\Documents\ict\menu_files/all min.css">
+  <script src="file:///C:/Users/Kian%20Christian/Documents/ict/MENU_files/RECORDS.css"></script>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="header">
+    <!-- logo -->
+    <a class="logo" href="https://la-botique-de-vinyl.netlify.app/">
+    <img src="file:///C:\Users\Kian Christian\Documents\ict\home_files/no bg logo.png">
+    </a>
+
+    <!-- nav bar start -->
+    <nav class="navbar">
+      <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="MENU.html">Menu</a></li>
+        <li><a c href="about us.html">About Us</a></li>
+      </ul>
+    <!-- <div id="menu-btn" class="fas fa-bars"></div>  -->
+    </nav>
+    <!-- nav bar end -->
+
+
+    <!-- hyperlink with icons (search, cart, profile, menu button) -->
+    <div class="icons">
+    <div class="cart-container" onmouseover="showCartForm()" onmouseout="hideCartForm()">
+      <a href="https://la-botique-de-vinyl.netlify.app/4-cart.html">
+      <div class="fas fa-shopping-cart" id="cartButton"></div>
+      </a>
+        <div class="cart-form" id="cartForm">
+          <form>
+            <div id="cartItems"></div>
+            <div id="total-price"><span id="totalPrice"></span></div>
+          </form>
+        </div>
+    </div>
+    <!-- hyperlink with icons (search, cart, profile, menu button) -->
+  </div></header>
+  <!-- header end -->
+
+  <!-- Menu Section -->
+<section class="menu" id="menu">
+  <h1 class="heading"> The WindBreaker Co. </h1>
+  <p class="about-content">Your go-to for stylish and functional outerwear.</p>
+
+
+  <div class="category-text"><h3>HOODED WINDBREAKER</h3></div>
+
+
+<div class="menu">
+  <div class="container menu-section">
+    <!-- product 1 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/sporstwear.png">
+      </div>
+      <div class="menu-content">
+        <h3>Sky Sportswear Hooded Windbreaker</h3>
+        <p>This stylish and functional hooded windbreaker jacket is perfect for everyday wear and light outdoor activities.  The color-blocked design combines a cream/off-white base with a muted blue, offering a modern and versatile look.</p>
+         <div onclick="addToCart(&#39;Frappe Mocha (Small)&#39;, &#39;'P90.00&#39;, &#39;Products/No BG/frappe_mocha.png&#39;.&#39;item1-s&#39;); return false;">
+          <button id="item1-s"> <span>P 675.00</span></button> <!-- SMALL -->
+         </div>
+        
+         
+      </div>
+    </div>
+
+     <!-- product 2 -->
+     <div class="menu-box" >
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\MENU_files/brown.png" alt=>
+      </div>
+      <div class="menu-content">
+        <h3>Hong Qun Color-Block Hooded Windbreaker</h3>
+        <p>This Hong Qun hooded windbreaker jacket features a modern, color-blocked design.  The jacket combines a dark gray and black color scheme in a dynamic, angular pattern.The design is contemporary and casual, suitable for everyday wear.</p>
+
+        <div onclick="addToCart(&#39;Frappe Strawberry (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/frappe_strawberryvanilla.png&#39;, &#39;item2-s&#39;); return false">
+         <button id="item2-s"> <span>P500.00</span></button>
+        </div>
+
+        
+      </div>
+     </div>
+
+     <!-- product 3 -->
+     <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/versatile.png" alt=>
+      </div>
+      <div class="menu-content">
+        <h3>Versatile Tri-Tone Windbreaker</h3>
+        <p>The Versatile Tri-Tone Windbreaker is a must-have for your wardrobe.  Its unique three-color design, combining brown, black, and off-white, allows for effortless styling with a variety of outfits.</p>
+        <div onclick="addToCart(&#39;Frappe Vanilla-Macadamia (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/frappe vanillamacadamia.png&#39;, &#39;item3-s&#39;; return false;">
+         <button id="item3-s"><span>P570.00</span></button>
+        </div>
+
+      
+      </div>
+    </div>
+
+    <!-- product 4 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/city street.png" alt>
+      </div>
+      <div class="menu-content">
+        <h3>City Street Windbreaker</h3>
+        <p>The City Street Windbreaker is the perfect blend of style and comfort for everyday wear.  This jacket features a modern two-tone design, combining a classic black base with beige panels and subtle black stripes for a touch of visual interest. The full-zip front, drawstring hood, and likely included pockets provide both functionality and convenience.</p>
+         <div onclick="addToCart(&#39;Frappe Javachip (Small)&#39;, &#39;'P90.00&#39;, &#39;Products/No BG/frappe-javachip.png&#39;, &#39;item4-s&#39;); return false;">
+         <button id="item4-s"> <span>P899.00</span></button>
+         </div>
+
+      
+      </div>
+    </div>
+
+    <!-- Add more menu items here with the same structure -->
+  </div>
+
+
+    <div class="category-text"><h3>RETRO/SPORTY WINDBREAKER</h3></div>
+
+  <div class="menu">
+  <div class="container menu-section">
+    <!-- product 1 -->
+    <div class="menu-box" id=>
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/retro_track.png" alt=>
+      </div>
+
+      <div class="menu-content">
+        <h3>Retro Track Jacket</h3>
+        <p>A stylish blend of classic and contemporary design.  The deep navy body is accented by bold color-blocked sleeves in cream and burgundy, creating a look that's both nostalgic and modern.</p>
+        <div onclick="addToCart(&#39;Iced Americano (Small)&#39;, &#39;'P90.00&#39;, &#39;Products/No BG/iced_americano.png&#39;, &#39;item5-s&#39;); return false;">
+         <button id="item5-s"> <span>P1,000.00</span></button> </div>
+        </div>
+    </div>  
+
+    <!-- product 2 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/tri-color.png" alt=>
+      </div>
+
+      <div class="menu-content">
+        <h3>Tri-Color Windbreaker</h3>
+        <p>The Tri-Color Windbreaker is your go-to jacket for effortless style and all-day comfort.  Its striking color-blocked design in navy, white, and forest green offers a fresh take on classic sportswear.</p>
+        <div onclick="addToCart(&#39;Iced Cafelatte (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/iced_cafelatte.png&#39;, &#39;item6-s&#39;); return false;">
+         <button id="item6-s"> <span>P1,300.00</span></button>
+        </div>
+         </div>
+      </div>
+   
+
+    <!-- product 3 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/teal.png" alt=>
+      </div>
+      <div class="menu-content">
+        <h3>Teal Windbreaker</h3>
+        <p>he Teal Windbreaker offers understated elegance with a modern twist.  The soft teal fabric is complemented by subtle color blocking in white and navy, creating a sophisticated and versatile piece.  Lightweight and breathable, it's perfect for layering or wearing alone.</p>
+        <div onclick="addToCart(&#39;Iced Cappuccino (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/iced_cappuccino.png&#39;, &#39;item7-s&#39;); return false;">
+         <button id="item7-s"> <span>P1,250.00</span></button>
+         </div>
+         </div>
+      </div>
+    
+
+    <!-- product 4 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/night runner.png" alt=>
+      </div>
+      <div class="menu-content">
+        <h3>Night Runner WindBreaker</h3>
+        <p>The Urban Runner Windbreaker is your versatile companion for any occasion.  Its classic black design is elevated by stylish lilac and off-white stripes, creating a look that's both sporty and sophisticated.</p>
+        <div onclick="addToCart(&#39;Iced Caramelatte (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/iced_caramelatte.png&#39;, &#39;item8-s&#39;); return false;">
+         <button id="item8-s"> <span>P1,350.00</span></button>
+        </div>
+      </div>
+    </div>  
+
+        <!--Add more menu items here with the same structure -->
+  </div>
+
+    <div class="category-text"><h3>Minimalist Windbreaker</h3></div>
+
+  <div class="menu">
+  <div class="container menu-section">
+    <!-- product 1 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/midnight.png" alt=>
+      </div>
+      <div class="menu-content">
+        <h3>Midnight Racer</h3>
+        <p>Sleek black windbreaker with white piping detail and minimal branding. Lightweight and comfortable for everyday wear. </p>
+        <div onclick="addToCart(&#39;Hot Americano (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/hot_americano.png&#39;, &#39;item9-s&#39;); return false;">
+         <button id="item9-s"> <span>P1,400.00</span></button>
+        </div>
+      </div>
+    </div>  
+
+    <!-- product 2 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/reversible.png" alt=>
+      </div>
+      <div class="menu-content">
+        <h3>Minimalist Reversible</h3>
+        <p>his windbreaker features a clean, simple design in a versatile beige with a contrasting navy reverse side.  The lightweight fabric offers comfortable protection from the elements, while the subtle branding keeps the focus on the jacket's sleek silhouette.</p>
+        <div onclick="addToCart(&#39;Hot Cafelatte (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/hot_cafelatte.png&#39;, &#39;item10-s&#39;); return false;">
+         <button id="item10-s"> <span>P1,350.00</span></button>
+        </div>
+        </div>
+      </div>
+  
+
+    <!-- product 3 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/classic lightweight.png" alt=>
+      </div>
+      <div class="menu-content">
+        <h3>Classic Lightweight Windbreaker</h3>
+        <p>his Classic Lightweight Windbreaker offers reliable protection from wind and light rain.  Its simple, versatile design makes it suitable for various occasions, from casual everyday wear to outdoor activities.</p>
+        <div onclick="addToCart(&#39;Hot Cappuccino (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/hot_cappuccino.png&#39;, &#39;item11-s&#39;); return false;">
+         <button id="item11-s"> <span>P1,350.00</span></button>
+        </div>
+      </div>
+    </div>  
+
+        <!-- product 4 -->
+    <div class="menu-box">
+      <div class="menu-img">
+        <img src="file:///C:\Users\Kian Christian\Documents\ict\menu_files/everyday.png" alt=>
+      </div>
+      <div class="menu-content">
+        <h3>The Everyday Windbreaker</h3>
+        <p>The Everyday Windbreaker is the perfect blend of understated style and practical functionality.  Crafted from a lightweight, breathable fabric (material specifics would need to be added if known), this jacket offers comfortable protection from light wind and rain.</p>
+        <div onclick="addToCart(&#39;Hot Mocha (Small)&#39;, &#39;P90.00&#39;, &#39;Products/No BG/hot_mocha.png&#39;, &#39;item12-s&#39;); return false;">
+         <button id="item12-s"> <span>P1,215.00</span></button>
+        </div>
+        </div>
+      </div>
+  
+
+</div></div></section>
+  <!-- Menu Section End -->
+
+    <!-- footer start -->
+  <section class="footer">
+
+    <div class="container">
+      <div class="footer-box-1">
+        <h3> Location </h3>
+        <div class="footer-loc">
+          <a href="https://www.google.com/maps/place/TUP+-+College+of+Industrial+Technology/@14.5873937,120.9848474,17z/data=!3m1!4b1!4m6!3m5!1s0x3397cb93cd451575:0x6247d293ffefede0!8m2!3d14.5873937!4d120.9848474!16s%2Fg%2F11hfq216nk?h1=en&amp;entry=ttu" target="_blank">College of Industrial Technology, 660. TUP, Ermita, Manila, 1000</a>
+        </div>
+      </div>
+
+      <div class="footer-box">
+        <h3> Newsletter </h3>
+        <p>Stay updated with our latest</p>
+        <form>
+          <input type="email" name="email" placeholder="name@gmail.com">
+          <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+        </form>
+      </div>
+
+      <div class="footer-box">
+        <h3> Contact Us </h3>
+        <p>Connect With Us On:</p>
+        <div class="icons">
+        
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- footer end -->
+  <script src="file:///C:/Users/Kian%20Christian/Documents/ict/MENU_files/2-menu.js.download"></script>
+
+</body></html>
